@@ -40,13 +40,13 @@ Note:
 * Clicking the column header should sort the data according to that column
 * Clicking the column header successively should toggle the sort directions.
 
-![Page Navigation](/requirements/page_navigation.png?raw=true)
+![Home Page](/requirements/home_screen.png?raw=true)
 
 #### Detail View
-![Page Navigation](/requirements/detail_view.png?raw=true)
+![Detail Page](/requirements/detail_view.png?raw=true)
 
 #### Profile View
-![Page Navigation](/requirements/profile_view.png?raw=true)
+![Profile Page](/requirements/profile_view.png?raw=true)
 
 ### Data
 See `/data` directory for site JSON files 
