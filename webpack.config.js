@@ -10,12 +10,17 @@ module.exports = {
   module: {
     rules: [
       {
-        use: 'babel-loader',
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: [
           /node_modules/,
-          /requirements/
-        ]
+          /requirements/,
+        ],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          }
+        }
       },
       {
         test: /\.css$/i,
