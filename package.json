@@ -1,0 +1,36 @@
+{
+  "name": "earthquake-zen-garden",
+  "version": "1.0.0",
+  "description": "Earthquake Data Visualization",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mark-A-A/earthquake-zen-garden.git"
+  },
+  "author": "Mark Awai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mark-A-A/earthquake-zen-garden/issues"
+  },
+  "homepage": "https://github.com/Mark-A-A/earthquake-zen-garden#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^6.2.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.48.0"
+  }
+}
