@@ -34,11 +34,11 @@ A user should be able to:
 This should be the default view the users sees when the application loads.
 
 Note: 
-Clicking the logo in the header from any view will return to this view
-Clicking on one of the items in the list should take the user to the Detail View
-Clicking the welcome message in the header should take the user to the Profile View
-Clicking the column header should sort the data according to that column
-Clicking the column header successively should toggle the sort directions.
+* Clicking the logo in the header from any view will return to this view
+* Clicking on one of the items in the list should take the user to the Detail View
+* Clicking the welcome message in the header should take the user to the Profile View
+* Clicking the column header should sort the data according to that column
+* Clicking the column header successively should toggle the sort directions.
 
 ![Page Navigation](/requirements/page_navigation.png?raw=true)
 
