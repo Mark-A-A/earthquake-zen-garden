@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useSelector } from "react-redux";
 
 import {
@@ -9,7 +8,6 @@ import {
 import { parseDateTime } from 'Utils/parseDateTime';
 
 export const getQuakeData = (earthquake) => {
-
   const { id } = earthquake;
   const {
     mag: magnitude,
@@ -18,6 +16,7 @@ export const getQuakeData = (earthquake) => {
   } = earthquake?.properties || {};
 
   const timeParsed = parseDateTime(time);
+
   return {
     place,
     magnitude,
