@@ -146,6 +146,9 @@ export default function EarthQuakesTable(props) {
     setPage(0);
   };
 
+  const getPaginationRowOptions = () => {
+    return [5, 10, 25].filter(rowsPerPage => (rowsPerPage < rows.length) || ((rows.length - rowsPerPage) < 5 && (rows.length - rowsPerPage) >= -5))
+  }
 
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
@@ -204,7 +207,7 @@ export default function EarthQuakesTable(props) {
       </TableContainer>
       <TablePagination
         className="earthquakes-table-footer"
-        rowsPerPageOptions={[5, 10, 25]}
+        rowsPerPageOptions={getPaginationRowOptions()}
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}

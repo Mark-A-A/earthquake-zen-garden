@@ -1,7 +1,8 @@
 @import './normalize.scss';
 @import './variables.scss';
 
-body {
+body,
+.MuiTableCell-root {
   font-family: $font-family;
   background-color: white;
 }
@@ -49,7 +50,7 @@ nav {
     li#item-welcome-user {
       flex-basis: 15%;
       flex-shrink: 1;
-      justify-content: flex-end;;
+      justify-content: flex-end;
       align-items: center;
       display: flex;
     }
@@ -60,17 +61,29 @@ nav {
   .page-title-header {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
   }
 }
 
 .home-page {
-  .earthquakes-table-container,  .earthquakes-table-footer{
-    max-width: 725px;
+  .earthquakes-table-container,
+  .earthquakes-table-footer {
+    max-width: 800px;
     margin: 0 auto;
 
-    .MuiTableCell-root {
+    .MuiTableCell-root,
+    .MuiTypography-body2,
+    .MuiTypography-root,
+    .MuiInputBase-root {
+      font-family: $font-family;
       border-bottom: 0;
-      font-size: 1rem;
+      font-size: 16px;
+    }
+
+    tbody {
+      .MuiTableCell-root {
+        font-weight: 700;
+      }
     }
   }
 }
