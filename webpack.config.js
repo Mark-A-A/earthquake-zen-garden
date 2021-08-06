@@ -20,6 +20,7 @@ module.exports = {
       Components: path.resolve(__dirname, 'src/App/Components/'),
       Pages: path.resolve(__dirname, 'src/App/Pages/'),
       Hooks: path.resolve(__dirname, 'src/App/Hooks/'),
+      Utils: path.resolve(__dirname, 'src/App/utils/'),
     },
   },
 
@@ -42,7 +43,7 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
-      
+
       // {
       //   test: /\.(png|j?g|svg|gif)?$/,
       //   use: 'file-loader'

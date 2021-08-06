@@ -22,6 +22,8 @@ nav {
     padding-inline-start: 15px;
     padding-inline-end: 15px;
 
+    margin: 20px 0;
+
     li {
       list-style: none;
     }
@@ -84,6 +86,23 @@ nav {
       .MuiTableCell-root {
         font-weight: 700;
       }
+    }
+  }
+}
+
+.details-page {
+  .page-title-header {
+    justify-content: inherit;
+  }
+
+  ul.details-list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+
+    .detail-item {
+      margin: 3px 0;
     }
   }
 }

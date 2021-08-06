@@ -1,11 +1,12 @@
 import React from "react";
-import moment from 'moment';
+
 import { useSelector } from "react-redux";
 
 import {
   getEarthquakesList,
   getHomePageHeader
 } from 'ReduxStore/selectors'
+import { parseDateTime } from 'Utils/parseDateTime';
 
 export const getQuakeData = (earthquake) => {
 
@@ -16,7 +17,7 @@ export const getQuakeData = (earthquake) => {
     time,
   } = earthquake?.properties || {};
 
-  const timeParsed = moment(time).format('MMM Do, YYYY, h:mm:ss A');
+  const timeParsed = parseDateTime(time);
   return {
     place,
     magnitude,

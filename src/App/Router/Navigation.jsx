@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Container from '@material-ui/core/Container';
 
 import { Home } from "Pages/Home/Home";
 import { Detail } from "Pages/Detail/Detail";
@@ -18,19 +17,17 @@ export default function Navigation() {
         <NavBar />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Container maxWidth="md">
           <Switch>
             <Route path="/profile">
               <Profile />
             </Route>
-            <Route path="/detail">
+            <Route path="/detail/:id">
               <Detail />
             </Route>
             <Route path="/">
               <Home />
             </Route>
           </Switch>
-        </Container>
       </div>
     </Router>
   );

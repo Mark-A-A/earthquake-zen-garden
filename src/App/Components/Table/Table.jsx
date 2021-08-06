@@ -11,6 +11,8 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 
+import { EarthquakeLink } from '../EarthquakeLink/EarthquakeLink'
+
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
     return -1;
@@ -178,7 +180,8 @@ export default function EarthQuakesTable(props) {
                 const {
                   title,
                   magnitude,
-                  time
+                  time,
+                  id
                 } = row
 
                 return (
@@ -186,11 +189,11 @@ export default function EarthQuakesTable(props) {
                     hover
                     onClick={(event) => handleClick(event, row.title)}
                     tabIndex={-1}
-                    key={row.name}
+                    key={`${title}_${id}`}
                   >
 
                     <TableCell component="th" id={labelId} scope="row" padding="none">
-                      {title}
+                      <EarthquakeLink name={title} id={id} />
                     </TableCell>
                     <TableCell align="center">{magnitude}</TableCell>
                     <TableCell align="center">{time}</TableCell>
