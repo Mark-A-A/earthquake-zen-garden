@@ -16,7 +16,7 @@ export const getQuakeData = (earthquake) => {
     time,
   } = earthquake?.properties || {};
 
-  const timeParsed = moment().format('MMM Do, YYYY, h:mm:ss A');
+  const timeParsed = moment(time).format('MMM Do, YYYY, h:mm:ss A');
   return {
     place,
     magnitude,
