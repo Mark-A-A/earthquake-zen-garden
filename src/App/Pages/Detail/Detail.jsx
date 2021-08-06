@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { useEarthquakeDetail } from 'Hooks/useEarthquakeDetail';
 import { Page } from 'Components/Page/Page';
+import { DataChartSection } from 'Components/DataChartSection/DataChartSection';
 
 export function Detail() {
   const { id } = useParams();
@@ -10,34 +11,8 @@ export function Detail() {
 
   return (
     <Page pageName={"details-page"} title={details.title} containerSize="sm">
-      <section>
-        <ul className='details-list'>
-          {
-            Object.entries(details).map((detail, i) => {
-              const [key, value] = detail;
-              const chars = key.split("")
-              chars[0] = chars[0].toUpperCase()
-              const propertyName = chars.join("");
-              return (
-                <ListItem key={`${id}_${i}`} propertyName={propertyName} value={value}/>
-              )
-            })
-          }
-        </ul>
-      </section>
+      <DataChartSection id={id} data={details} listClassName={'details-list'}/>
     </Page>
   )
 }
 
-export const ListItem = ({propertyName, value}) => {
-  return (
-    <>
-      <li className="detail-item detail-property">
-        <span >{propertyName}</span>
-      </li>
-      <li className="detail-item detail-value">
-        <span >{value}</span>
-      </li>
-    </>
-  )
-}

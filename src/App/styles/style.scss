@@ -5,6 +5,10 @@ body,
 .MuiTableCell-root {
   font-family: $font-family;
   background-color: white;
+
+  .app-root {
+    height: 100vh;
+  }
 }
 
 nav {
@@ -43,7 +47,7 @@ nav {
       align-items: center;
       flex: 1 1;
 
-      h4 {
+      h2,h3, h4 {
         color: $dark-gray;
         font-weight: 600;
       }
@@ -94,15 +98,29 @@ nav {
   .page-title-header {
     justify-content: inherit;
   }
+}
 
-  ul.details-list {
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-
-    .detail-item {
-      margin: 3px 0;
+.profile-page {
+  .profile-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  section.image-section {
+    img {
+      width: 225px;
     }
   }
+  section.data-chart-section {
+    ul.profile-list {
+      margin: 0 0 0 20px;
+
+      li.detail-item {
+        font-weight: 600;
+      }
+      li.detail-item.detail-value {
+        color: $dark-gray;
+      }
+    }
+  }
+
 }

@@ -4,11 +4,6 @@ export const getEarthquakesList = (state) => state?.earthquakes?.data?.features
 
 export const getHomePageHeader = (state) => state?.earthquakes?.data?.metadata?.title
 
-export const getEarthquakePathID = (props) => {
-  console.dir(props.match.params)
-  return props?.match
-}
-
 export const getSelectedEarthquakeDetails = (state) => (id) => {
   const list = getEarthquakesList(state)
   const earthquake = list.find((earthquake) => {
@@ -40,6 +35,4 @@ export const getSelectedEarthquakeDetails = (state) => (id) => {
   }
 }
 
-export const getUserProfile = () => {
-
-}
+export const getUserProfile = (state) => state?.user?.profile;
