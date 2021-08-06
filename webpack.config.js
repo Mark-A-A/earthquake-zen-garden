@@ -13,6 +13,9 @@ module.exports = {
     filename: '[name].js',
     publicPath: '/',
   },
+  resolve: {
+    extensions: [".ts", ".js", ".jsx"],
+  },
   module: {
     rules: [
       {
