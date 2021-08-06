@@ -9,24 +9,13 @@ import {
 import { Home } from "../Pages/Home/Home";
 import { Detail } from "../Pages/Detail/Detail";
 import { Profile } from "../Pages/Profile/Profile";
+import { NavBar } from "./NavBar/NavBar";
 
 export default function Navigation() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/detail">Detail</Link>
-            </li>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-          </ul>
-        </nav>
+      <div className="Navigation">
+        <NavBar />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
