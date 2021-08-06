@@ -1,11 +1,6 @@
 import React from "react";
 
 export const DataItem = ({ propertyName, value }) => {
-  console.dir({
-    propertyName,
-    value
-  })
-  
   return (
     <>
       <li className="detail-item detail-property">

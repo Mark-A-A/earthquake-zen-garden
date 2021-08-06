@@ -6,7 +6,6 @@ import './chartStyle.scss'
 
 export function DataChartSection(props) {
   const { data, listClassName, id = ""} = props
-  console.dir(data)
   return (
     <section className="data-chart-section">
       <ul className={listClassName}>
