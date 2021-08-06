@@ -47,7 +47,7 @@ nav {
       align-items: center;
       flex: 1 1;
 
-      h2,h3, h4 {
+      h2, h3, h4 {
         color: $dark-gray;
         font-weight: 600;
       }
@@ -71,6 +71,10 @@ nav {
   }
 }
 
+.home-page, .details-page, .profile-page {
+   font-size: 18px;
+}
+
 .home-page {
   .earthquakes-table-container,
   .earthquakes-table-footer {
@@ -83,7 +87,6 @@ nav {
     .MuiInputBase-root {
       font-family: $font-family;
       border-bottom: 0;
-      font-size: 16px;
     }
 
     tbody {

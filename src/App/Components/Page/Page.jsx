@@ -10,7 +10,7 @@ export function Page(props) {
     <div className={`page ${pageName}`}>
       <Container maxWidth={containerSize}>
         <div className="page-title-header">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
         </div>
         {children}
       </Container>
