@@ -1,6 +1,6 @@
 # Earthquake Zen Garden 
-ver. 3.12.3
-React Developer Skill Evaluation Exercise
+#### ver. 3.12.3
+#### React Developer Skill Evaluation Exercise
 This is a simple app that shows a homepage with a list of earthquakes. It has a header with a logo (link back to home), and a link to a profile detail view. Each entry in the table links to a detail view of that particular record. See the screens and reference data below.
 
 Page navigation
@@ -15,8 +15,8 @@ Page navigation
 ### Requirements
 A user should be able to:
 * Clone the repo
-* Run ‘npm install’ // install dependencies
-* Run ‘npm run start’ // auto-start the app, open a browser instance and load the app
+* Run `npm install` // install dependencies
+* Run `npm run start` // auto-start the app, open a browser instance and load the app
 * The app should look and behave as outlined below
  
 ### Specs
