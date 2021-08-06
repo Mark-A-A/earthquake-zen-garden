@@ -13,9 +13,9 @@ export const NavBar = () => {
         <ul className="navbar-items-list">
           <li id="item-logo">
             <Link to="/">
-              <logo>
+              <div className="logo">
                 <img src="https://www.realtor.com/realtor-com.png" />
-              </logo>
+              </div>
             </Link>
           </li>
           <li id='item-title'>

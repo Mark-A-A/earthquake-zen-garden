@@ -27,7 +27,7 @@ nav {
 
     li#item-logo {
       flex: 0 1 15%;
-      logo {
+      .logo {
         img {
           width: 50px;
         }
@@ -52,6 +52,25 @@ nav {
       justify-content: flex-end;;
       align-items: center;
       display: flex;
+    }
+  }
+}
+
+.page {
+  .page-title-header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.home-page {
+  .earthquakes-table-container,  .earthquakes-table-footer{
+    max-width: 725px;
+    margin: 0 auto;
+
+    .MuiTableCell-root {
+      border-bottom: 0;
+      font-size: 1rem;
     }
   }
 }

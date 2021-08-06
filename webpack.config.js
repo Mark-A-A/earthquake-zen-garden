@@ -15,7 +15,14 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".js", ".jsx"],
+    alias: {
+      ReduxStore: path.resolve(__dirname, 'src/App/ReduxStore/'),
+      Components: path.resolve(__dirname, 'src/App/Components/'),
+      Pages: path.resolve(__dirname, 'src/App/Pages/'),
+      Hooks: path.resolve(__dirname, 'src/App/Hooks/'),
+    },
   },
+
   module: {
     rules: [
       {
